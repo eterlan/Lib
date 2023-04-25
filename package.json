@@ -8,5 +8,9 @@
     "name": "eterlan",
     "email": "703246769@qq.com",
     "url": "https://www.zhihu.com/people/eterlan"
+  },
+  "dependencies": {
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+
   }
 }
