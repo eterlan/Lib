@@ -1,0 +1,12 @@
+{
+  "name": "com.eterlan.lib",
+  "version": "0.0.1",
+  "displayName": "Lib",
+  "description": "Some useful tools and framework for prototype",
+  "unity": "2019.4",
+  "author": {
+    "name": "eterlan",
+    "email": "703246769@qq.com",
+    "url": "https://www.zhihu.com/people/eterlan"
+  }
+}
