@@ -54,6 +54,17 @@ namespace Lib
             }
         } 
 
+        public IValue GetOrAddValue(Type type)
+        {
+            if (!m_valuesDict.TryGetValue(type, out var iValue))
+            {
+                iValue = (IValue)Activator.CreateInstance(type);
+                m_valuesDict.Add(type, iValue);
+            }
+
+            return iValue;
+        }
+        
         public T GetOrAddValue<T>() where T : IValue, new()
         {
             if (!m_valuesDict.TryGetValue(typeof(T), out var iValue))
