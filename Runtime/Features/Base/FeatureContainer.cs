@@ -51,6 +51,10 @@ namespace Lib
             for (var i = 0; i < features.Count; i++)
             {
                 features[i].Start();
+                if (features[i].oneShot)
+                {
+                    features.RemoveAt(i);
+                }
             }
         } 
 

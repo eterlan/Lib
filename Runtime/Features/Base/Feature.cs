@@ -8,6 +8,7 @@ namespace Lib
     {
         public    bool             enabled = true;
         protected FeatureContainer owner;
+        public    bool             oneShot;
         
         protected internal virtual void OnEnabled(FeatureContainer owner)
         {
