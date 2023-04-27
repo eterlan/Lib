@@ -41,5 +41,10 @@ namespace Lib
         {
             return new Vector2Int(Mathf.RoundToInt(input.x), Mathf.RoundToInt(input.y));
         }
+        
+        public static Vector2 CalculateDir(float angle)
+        {
+            return new Vector2(Mathf.Cos(Mathf.Deg2Rad * angle), Mathf.Sin(Mathf.Deg2Rad * angle));
+        }
     }
 }
