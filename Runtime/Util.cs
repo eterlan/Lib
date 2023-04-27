@@ -11,8 +11,6 @@ namespace Lib
 {
     public static class Util
     {
-        private const string UI_PATH = "Prefabs/UI/";
-
         public static T OpenUI<T>(OpenUIMode mode = OpenUIMode.Single) where T : UIBase
         {
             var name       = typeof(T).Name;
@@ -25,7 +23,7 @@ namespace Lib
             if (mode == OpenUIMode.Single) 
                 rootUIRoot.DestroyChildren();
 
-            var uiPrefab = Resources.Load<GameObject>(UI_PATH + name);
+            var uiPrefab = Resources.Load<GameObject>(Const.UI_FOLDER + name);
             var uiInstance      = Object.Instantiate(uiPrefab, rootUIRoot);
             uiInstance.name = name;
             return uiInstance.GetComponent<T>();
