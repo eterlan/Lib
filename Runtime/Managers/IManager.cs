@@ -6,5 +6,7 @@ namespace Lib
         {
             
         }
+
+        void OnUpdate(){}
     }
 }

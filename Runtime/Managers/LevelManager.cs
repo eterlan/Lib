@@ -10,7 +10,7 @@ namespace Lib.Managers
     /// 场景管理器应该第一个加载
     /// </summary>
     [Serializable]
-    public class SceneLoader : IManager// : Singleton<SceneManager>
+    public class LevelManager : IManager// : Singleton<SceneManager>
     {
         public       int     currentLevelIndex;
         public       SceneReference[] levels; 
@@ -117,6 +117,14 @@ namespace Lib.Managers
                 return;
             
             GameControllerBase.Instance.root.uiRoot = (RectTransform)uiRoot;
+        }
+
+        public void OnUpdate()
+        {
+            if (Input.GetKeyUp(KeyCode.F12))
+            {
+                LoadLevel(currentLevelIndex).Forget();
+            }
         }
     }
 }

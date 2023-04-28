@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Cysharp.Threading.Tasks;
+using Lib.Managers;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -79,6 +80,14 @@ namespace Lib
             {
                 managers[i].OnAwake();
             }
+        }
+
+        private void Update()
+        {
+            for (var i = 0; i < managers.Length; i++)
+            {
+                managers[i].OnUpdate();
+            }            
         }
 
         public static TManager GetManager<TManager>() where TManager : class, IManager
