@@ -10,7 +10,7 @@
     "url": "https://www.zhihu.com/people/eterlan"
   },
   "dependencies": {
-    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
-    "devlocker.utils.scenereference": "https://github.com/NibbleByte/UnitySceneReference.git#upm"
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.3",
+    "devlocker.utils.scenereference": "https://github.com/NibbleByte/UnitySceneReference#upm#1.0.4"
   }
 }
