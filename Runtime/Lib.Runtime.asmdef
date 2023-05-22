@@ -9,7 +9,7 @@
         "Unity.TextMeshPro",
         "DOTween.Modules",
         "DOTweenPro.Scripts",
-        "DevLocker.Utils.SceneReference.asmdef"
+        "DevLocker.Utils.SceneReference"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
