@@ -14,11 +14,13 @@ namespace Lib
 
         public static GameControllerBase Instance => instance;
 
+#if CY_FRAMEWORK
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Init()
         {
             InitAsync().Forget();
         }
+#endif
 
         private static async UniTaskVoid InitAsync()
         {
