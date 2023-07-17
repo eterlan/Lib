@@ -206,11 +206,6 @@ namespace Lib.Editor.Tool
                 }
                 windowSO.Update();
 
-                if (GUILayout.Button("读取"))
-                {
-                    Load();
-                }
-                
                 if (GUILayout.Button("保存当前选中物体")) 
                     AddToList();
 

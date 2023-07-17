@@ -32,7 +32,6 @@ namespace Lib
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         public static void InitializeOnEnterPlayMode()
         {
-            Debug.Log("InitializeOnEnterPlayMode");
             instance.m_eventDict.Clear();
         }
         
